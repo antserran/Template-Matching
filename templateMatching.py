@@ -65,7 +65,7 @@ def template_matching(img, template, method):
     bottom_right = (top_left[0] + w, top_left[1] + h)
     
     # Drawing rectangle around eye zone detected
-    detection = cv2.rectangle(img=aux, pt1=top_left, pt2=bottom_right, color=255, thickness=2)
+    detection = cv2.rectangle(img=aux, pt1=top_left, pt2=bottom_right, color=255, thickness=3)
     
     return matching, detection
 
