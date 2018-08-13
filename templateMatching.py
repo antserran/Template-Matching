@@ -73,10 +73,10 @@ def template_matching(img, template, method):
 if __name__ == "__main__" :
 
     # Reading original image in grayscale (0)
-    image = cv2.imread('image.jpg', 0)
+    image = cv2.imread('./images/image.jpg', 0)
     
     # Reading template image in grayscale (0)
-    template = cv2.imread('eye.jpg',0)
+    template = cv2.imread('./images/template.jpg',0)
     
     # Performing template matching
     matching, detection = template_matching(image, template, method=cv2.TM_CCOEFF)
